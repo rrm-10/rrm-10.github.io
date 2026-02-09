@@ -199,7 +199,7 @@ const TedStyleHome = () => {
                 </p>
                 <div className="mt-6">
                   <Link href="/about-more">
-                    <Button className="bg-sky-400 hover:bg-sky-500 text-white px-6 py-2 rounded-lg transition-colors duration-200">
+                    <Button className="bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-600 dark:text-gray-400 px-6 py-2 rounded-lg transition-colors duration-200">
                       More About Me →
                     </Button>
                   </Link>
@@ -224,7 +224,7 @@ const TedStyleHome = () => {
                     onClick={() => setActiveTab(tab)}
                     className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
                       activeTab === tab
-                        ? "bg-sky-400 text-white"
+                        ? "bg-sky-300 text-gray-800"
                         : "bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700"
                     }`}
                   >
@@ -244,12 +244,12 @@ const TedStyleHome = () => {
                     <div className="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-400 mb-4">
                       <time className="font-medium">{item.date}</time>
                       <span>•</span>
-                      <span className="px-2 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full text-xs font-medium">
+                      <span className="px-2 py-1 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full text-xs font-medium">
                         {item.category}
                       </span>
                     </div>
                     
-                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="text-gray-900 dark:text-gray-100 leading-relaxed">
                       {item.excerpt}
                     </p>
                   </article>
