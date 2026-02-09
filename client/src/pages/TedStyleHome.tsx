@@ -199,7 +199,7 @@ const TedStyleHome = () => {
                 </p>
                 <div className="mt-6">
                   <Link href="/about-more">
-                    <Button className="bg-primary hover:bg-primary/80 text-white px-6 py-2 rounded-lg transition-colors duration-200">
+                    <Button className="bg-sky-400 hover:bg-sky-500 text-white px-6 py-2 rounded-lg transition-colors duration-200">
                       More About Me →
                     </Button>
                   </Link>
@@ -224,7 +224,7 @@ const TedStyleHome = () => {
                     onClick={() => setActiveTab(tab)}
                     className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
                       activeTab === tab
-                        ? "bg-primary text-white"
+                        ? "bg-sky-400 text-white"
                         : "bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700"
                     }`}
                   >
